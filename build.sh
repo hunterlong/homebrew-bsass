@@ -32,9 +32,9 @@ cat formula | \
     -e "s/\$OSX32/$OSX32/" \
     -e "s/\$LIN64/$LIN64/" \
     -e "s/\$LIN32/$LIN32/" \
-    > statup.rb
+    > bsass.rb
 
-cat statup.rb
+cat bsass.rb
 
 #rev=$(git rev-parse --short HEAD)
 #git config user.name $GH_USER

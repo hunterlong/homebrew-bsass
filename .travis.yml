@@ -1,0 +1,8 @@
+os:
+  - linux
+
+env:
+  - VERSION=0.23
+
+script:
+  - VERSION=$VERSION ./build.sh

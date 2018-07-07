@@ -1,0 +1,32 @@
+class Statup < Formula
+  homepage 'https://github.com/hunterlong/bsass'
+  desc "bsass is much like the normal sass"
+  homepage "https://github.com/hunterlong/bsass"
+  version "$VERSION"
+  if OS.mac?
+    if Hardware::CPU.is_64_bit?
+      url "https://github.com/hunterlong/bsass/releases/download/v$VERSION/bsass-osx-x64.tar.gz"
+      sha256 "$OSX64"
+    else
+      url "https://github.com/hunterlong/bsass/releases/download/v$VERSION/bsass-osx-x32.tar.gz"
+      sha256 "$OSX32"
+    end
+  elsif OS.linux?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/hunterlong/bsass/releases/download/v$VERSION/bsass-linux-x64.tar.gz"
+        sha256 "$LIN64"
+      else
+        url "https://github.com/hunterlong/bsass/releases/download/v$VERSION/bsass-linux-x32.tar.gz"
+        sha256 "$LIN32"
+      end
+  end
+
+  def install
+    bin.install "bsass"
+  end
+
+  test do
+    system "#{bin}/bsass", "version"
+  end
+
+end

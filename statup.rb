@@ -1,4 +1,4 @@
-class Statup < Formula
+class Bsass < Formula
   homepage 'https://github.com/hunterlong/bsass'
   desc "bsass is much like the normal sass"
   homepage "https://github.com/hunterlong/bsass"

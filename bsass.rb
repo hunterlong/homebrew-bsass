@@ -27,5 +27,4 @@ class Bsass < Formula
   test do
     system "#{bin}/bsass", "version"
   end
-
 end

@@ -1,6 +1,6 @@
 class Bsass < Formula
   desc "Simplify the process of compiling scss to css"
-  homepage 'https://github.com/hunterlong/bsass'
+  homepage "https://github.com/hunterlong/bsass"
   version "$VERSION"
   if OS.mac?
     if Hardware::CPU.is_64_bit?

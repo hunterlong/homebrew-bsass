@@ -1,9 +1,9 @@
 class Bsass < Formula
-  desc "A simple application that works just like sass but without any requirements"
+  desc "Simplify the process of compiling scss to css"
   homepage 'https://github.com/hunterlong/bsass'
   version "0.16"
   if OS.mac?
-   if Hardware::CPU.is_64_bit?
+    if Hardware::CPU.is_64_bit?
       url "https://github.com/hunterlong/bsass/releases/download/v0.16/bsass-osx-x64.tar.gz"
       sha256 "adeb00b51ef1f69b4210b62e4aab1cebb90090260e424b53469a287b44d6484e"
     else

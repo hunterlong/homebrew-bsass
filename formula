@@ -1,7 +1,6 @@
 class Bsass < Formula
-  homepage 'https://github.com/hunterlong/bsass'
   desc "bsass is much like the normal sass"
-  homepage "https://bsass.app"
+  homepage 'https://github.com/hunterlong/bsass'
   version "$VERSION"
   if OS.mac?
     if Hardware::CPU.is_64_bit?
